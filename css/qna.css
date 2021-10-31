@@ -1,0 +1,18 @@
+/* main.css */
+@import url(common.css);
+
+html,body{width: 100%;height: 100%;}
+
+main{height: 100%;background: #F8F9FA;padding:64px 0 0;}
+main > div > ul{display: flex;flex-direction: column;}
+main > div > ul > li{display: inline-block;width: 100%;height: 100%;background: #fff;}
+main > div > ul > li > a{position: relative;display: inline-block;width: 100%;height: 72px;}
+main > div > ul > li > a > span:first-of-type{display: inline-block;position: relative;left:15px;top:12px;}
+main > div > ul > li:nth-of-type(1) > a > span:first-of-type{background: url(../images/qna_icon1.png) no-repeat 0 0;width: 48px;height: 48px;}
+main > div > ul > li:nth-of-type(2) > a > span:first-of-type{background: url(../images/qna_icon2.png) no-repeat 0 0;width: 48px;height: 48px;}
+main > div > ul > li:nth-of-type(3) > a > span:first-of-type{background: url(../images/qna_icon3.png) no-repeat 0 0;width: 48px;height: 48px;}
+main > div > ul > li:nth-of-type(4) > a > span:first-of-type{background: url(../images/qna_icon4.png) no-repeat 0 0;width: 48px;height: 48px;}
+main > div > ul > li > a > span:nth-of-type(2){position: absolute;left: 75px;top:15px;font-size: 18px;font-weight: bold;}
+main > div > ul > li > a > span:nth-of-type(3){position: absolute;right: 15px;top:15px;font-size: 13px;}
+main > div > ul > li > a > span:nth-of-type(4){position: absolute;left: 75px;top:40px;font-size: 13px;opacity: 0.8;}
+main > div > ul > li > a > span:nth-of-type(5){position: absolute;right: 15px;top:40px;font-size: 10px;display: inline-block;width: 22px;height: 13px;background: #F9881F;border-radius: 8px;text-align: center;box-sizing: border-box;padding-top: 1px;}
