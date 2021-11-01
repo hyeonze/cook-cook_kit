@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cook-cook kit</title>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<link rel="apple-touch-icon-precomposed" href=".png" />
+<link rel="apple-touch-startup-image" href=".png" />
+<script src="https://kit.fontawesome.com/6c4c22fc0d.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/ship.css" />
+</head>
+<body>
+<!-- header -->
+<header>
+    <!-- status_bar -->
+    <div class="status_bar">
+        <div class="left_item"><i class="fas fa-plane"></i><i class="fas fa-wifi"></i></div>
+        <div class="center_item"><span>17</span>:<span>33</span></div>
+        <div class="right_item"><i class="far fa-moon"></i><i class="fab fa-bluetooth-b"></i><span><span>100</span>%</span><i class="fas fa-battery-full"></i></div>
+    </div>
+    <!-- //status_bar -->
+    <!-- title_bar -->
+    <div class="title_bar">
+        <h1>Order Inquiry</h1>
+        <div class="left_item"><a href="#"><i class="fas fa-chevron-left"></i></a></div>
+        <div class="right_item"><a href="#"><i class="fas fa-search"></i></a></div>
+    </div>
+    <!-- //title_bar -->
+</header>
+<!-- //header -->
+<hr />
+<!-- main -->
+<main>
+<!-- 구글지도 -->
+<div class="map"></div>
+<script>
+    let map;
+
+    function initMap() {
+        var addr = {lat: 37.504018, lng: 127.024267}; // 위도, 경도
+
+        //맵만들기
+        map = new google.maps.Map(document.querySelector(".map"), {
+            center: addr,
+            zoom: 15,
+        });
+
+        //마커생성
+        var marker = new google.maps.Marker({
+        position: addr,
+        map: map,
+        title:"배송지"
+        });
+
+        //인포윈도생성
+        var infowindow = new google.maps.InfoWindow({
+            content:"배송지 : 서울특별시 서초구"
+        });
+        infowindow.open(map,marker);
+    }
+</script>
+<script async
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB97V52WLb4B9MF9uN8Ff55ZEOgXF8FAFE&callback=initMap">
+</script>
+<div class="info">
+    <img src="images/ship_profile.png" alt="ship_profile" />
+    <span>Delivery staff : Friedlich</span>
+    <span>Estimated arrival time</span>
+    <span>July 14, 2021</span>
+    <span>AM 07:00</span>
+    <div>
+        <a href="#"><i class="fas fa-phone-alt"></i>Call</a>
+        <a href="#"><i class="fas fa-comment"></i>Message</a>
+    </div>
+</div>
+</main>
+<!-- //main -->
+<br />
+<!-- tab_bar -->
+<nav class="tab_bar">
+    <ul>
+        <li><a href="home.html"><i class="fas fa-home"></i>Home</a></li>
+        <li><a href="cart.html"><i class="fas fa-shopping-cart"></i>Cart</a></li>
+        <li><a href="category.html"><i class="fas fa-bars"></i></i></a></li>
+        <li><a href="liked.html"><i class="fas fa-heart"></i>Liked</a></li>
+        <li><a href="mypage.html"><i class="fas fa-user"></i>Mypage</a></li>
+    </ul>
+</nav>
+<!-- tab_bar -->
+</body>
+</html>
