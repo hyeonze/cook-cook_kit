@@ -1,0 +1,16 @@
+/* main.css */
+@import url(common.css);
+
+html,body{width: 100%;height: 100%;}
+
+body > header{height: 24px;background: #F9881F;}
+.status_bar{height: 100%;}
+
+main{position: relative;height: 100%;background: #F9881F;padding:64px 0;box-sizing: border-box;}
+main > h1{position: absolute;left: calc(50% - 96.5px); top:250px;text-indent: -9999px;overflow: hidden;
+    background: url(../images/logo.png) no-repeat 0 0;width: 193px;height: 210px;}
+main > p{position: absolute;top:572px;left:calc(50% - 91px);font-size: 20px;text-align: center;}
+main > img{position: absolute;}
+main > img:first-of-type{right: 0;top:0;}
+main > img:nth-of-type(2){width: 74px;height: 69px;left: 32.59px;top: 187px;transform: rotate(13.91deg);}
+main > img:last-of-type{left: 0;bottom:0;}

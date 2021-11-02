@@ -5,20 +5,11 @@ html,body{width: 100%;height: 100%;}
 
 main{height: 110%;background: #F8F9FA;padding:64px 15px 0;}
 
-main > p{font-size: 14px;padding: 15px 0;}
-
-.map{width: 100%;height: 400px;background-color: gray;}
-.info{position: relative;width: 100%;height: 225px;background: #fff;box-sizing: border-box;padding: 15px;margin-top: 15px;border-radius: 8px;}
-.info > img{}
-.info > span{position: absolute;left: 147px;font-size: 17px;}
-.info > span:nth-of-type(1){font-weight: bold;}
-.info > span:nth-of-type(2){top:50px;}
-.info > span:nth-of-type(3){top:80px;}
-.info > span:nth-of-type(4){top:100px;}
-.info > div{position: absolute;top:161px;width: 100%;}
-.info > div > a{display: inline-block;width:47%;height: 49px;background: #C4C4C4;box-sizing: border-box;border-radius: 20px;color: #fff;
-    font-size: 17px;font-weight: bold;text-align: center;padding-top: 7px;}
-.info > div > a:last-of-type{margin-left: 10px;}
-.info > div > a > i{margin-right: 10px;display: inline-block;width: 36px;height: 36px;background: #34C759;text-align: center;
-    padding-top: 8px;box-sizing: border-box;border-radius: 50%;}
-.info > div > a:last-of-type > i{background: #FF9500;}
+main > form > fieldset{position: relative;top:15px;}
+main > form > fieldset > i{position: absolute;left:8px;top:calc(50% - 9px); font-size: 17px;color: #818186;}
+main > form > fieldset > input{width: 100%;height: 36px;font-size: 17px;border: none;background: #e8e9eb;border-radius: 10px;box-sizing: border-box;padding-left: 30px;}
+main > div{position: relative;top:30px;display: flex;flex-direction:column;height: 352px;}
+main > div > dl{position: relative;flex:1;display: inline-block;width: 100%;}
+main > div > dl > dt{display: inline-block;font-size: 17px;font-weight: bold;box-sizing: border-box;padding-top: 13.5px;}
+main > div > dl > dd{position: absolute;display: inline-block;right:0;font-size: 17px;opacity: 0.6;box-sizing: border-box;padding-top: 13.5px;}
+main > div > dl:nth-of-type(7) > dd{padding-top: 6.5px;}
