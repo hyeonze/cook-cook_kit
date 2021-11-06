@@ -22,3 +22,9 @@ main > div > div > div > a{display: inline-block;width: 43%;/*width: 151px;*/hei
 main > div > div > div > a.completed{background: #C4C4C4;}
 main > div > div > div > a:link, a:visited, a:hover, a:focus, a:active{color:#fff;}
 main > div > div > div > a:first-of-type{margin-right: 15px;}
+main > div > div:first-of-type > div > a:last-of-type:after{content: "";position: relative;top:-13px;left: 2px;display:inline-block;width: 7px;height: 7px;background: #f00;border-radius: 50%;animation: blink 1s infinite alternate;}
+
+@keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}

@@ -6,8 +6,11 @@ html,body{width: 100%;height: 100%;}
 main{height: 100%;background: #F8F9FA;padding:64px 15px 0;}
 
 main > p{margin-top: 12px;font-size: 14px;}
-main > button{position: absolute;right:15px;top:65px;width:40px;height: 40px; background: url(../images/list_filter.png);text-indent: -9999px;overflow: hidden;border:none;}
-main > div{display: grid;grid-template-columns: 166px 166px;grid-template-rows:300px 300px;column-gap: 15px;row-gap: 15px;position: absolute;top:135px;}
+main > button{position: absolute;right:15px;top:65px;width:40px;height: 40px;
+    background: url(../images/list_filter.png);text-indent: -9999px;overflow: hidden;
+    border:none;cursor: pointer;}
+main > div{display: grid;grid-template-columns: 166px 166px;
+    grid-template-rows:300px 300px;column-gap: 15px;row-gap: 15px;position: absolute;top:135px;}
 main > div > dl{background: #fff;border-radius: 30px;}
 main > div > dl > a{position: relative;display: inline-block;width: 100%;height: 100%;}
 main > div > dl > a > dt{position: absolute;top:205px;left:15px;font-size: 16px;}

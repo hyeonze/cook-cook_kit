@@ -11,6 +11,7 @@
 <link rel="apple-touch-startup-image" href=".png" />
 <script src="https://kit.fontawesome.com/6c4c22fc0d.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="css/liked.css" />
+<script src="js/main.js"></script>
 </head>
 <body>
 <!-- header -->
@@ -26,7 +27,17 @@
     <div class="title_bar">
         <h1>Liked</h1>
         <div class="left_item"><a href="javascript:history.back()"><i class="fas fa-chevron-left"></i></a></div>
-        <div class="right_item"><a href="#"><i class="fas fa-search"></i></a></div>
+        <div class="right_item btn_srch"><a href="#"><i class="fas fa-search"></i></a></div>
+        <div class="search">
+            <form action="/" method="post">
+                <fieldset>
+                    <legend class="blind">search box</legend>
+                    <label for="search" class="blind">search box</label>
+                    <input type="search" id="search" placeholder="Please enter your search term."/>
+                    <button type="button">Search</button>
+                </fieldset>
+            </form>
+        </div>
     </div>
     <!-- //title_bar -->
 </header>
@@ -36,35 +47,35 @@
 <main>
 <p>Total 5</p>
 <div>
-    <dl><a href="#">
+    <dl><a href="product.html">
         <dt>Skinny Chicken Fried Rice</dt>
         <dd><img src="images/liked_item1.png" alt="Skinny Chicken Fried Rice"></dd>
         <dd>$ 8.4</dd>
         <dd><i class="fas fa-heart"></i></dd>
         <dd><i class="fas fa-shopping-cart"></i></dd>
     </a></dl>
-    <dl><a href="#">
+    <dl><a href="product.html">
         <dt>Cobb Salad</dt>
         <dd><img src="images/liked_item2.png" alt="Cobb Salad"></dd>
         <dd>$ 8.5</dd>
         <dd><i class="fas fa-heart"></i></dd>
         <dd><i class="fas fa-shopping-cart"></i></dd>
     </a></dl>
-    <dl><a href="#">
+    <dl><a href="product.html">
         <dt>Baked Purple Sweet Potato</dt>
         <dd><img src="images/liked_item3.png" alt="Baked Purple Sweet Potato"></dd>
         <dd>$ 8.9</dd>
         <dd><i class="fas fa-heart"></i></dd>
         <dd><i class="fas fa-shopping-cart"></i></dd>
     </a></dl>
-    <dl><a href="#">
+    <dl><a href="product.html">
         <dt>Caprese Pasta Salad</dt>
         <dd><img src="images/liked_item4.png" alt="Caprese Pasta Salad"></dd>
         <dd>$ 9.8</dd>
         <dd><i class="fas fa-heart"></i></dd>
         <dd><i class="fas fa-shopping-cart"></i></dd>
     </a></dl>
-    <dl><a href="#">
+    <dl><a href="product.html">
         <dt>Broccoli Mushroom Stir Fry</dt>
         <dd><img src="images/liked_item5.png" alt="Broccoli Mushroom Stir Fry"></dd>
         <dd>$ 9.2</dd>

@@ -8,8 +8,9 @@ main{height: 100%;background: #F8F9FA;padding:64px 15px 0;}
 main > p{font-size: 17px;font-weight: bold;margin-top: 15px;}
 main > div{margin-top: 10px;}
 main > div > dl{background: #fff;margin-bottom: 15px;border-radius: 20px;height: 100px;}
+main > div > dl > a{position: relative;}
 main > div > dl > a > dt{position: relative;display: inline-block;left:109px;top:12px;font-size: 17px;font-weight: bold;}
 main > div > dl > a > dd:first-of-type{position: relative;left:15px;top:-10px; width: 79px;height: 79px;}
 main > div > dl > a > dd:nth-of-type(2){position: relative;left:110px;top:-60px;font-size: 17px;display: inline-block;}
-main > div > dl > a > dd:nth-of-type(3){position: relative;left:360px;top:-85px;font-size: 19px;color: #F9881F;display: inline-block;}
-main > div > dl > a > dd:nth-of-type(4){position: relative;left:336px;top:-38px;font-size: 19px;color: #F9881F;display: inline-block;}
+main > div > dl > a > dd:nth-of-type(3){position: absolute;left:250px;top:55px; font-size: 19px;color: #F9881F;display: inline-block;}
+main > div > dl > a > dd:nth-of-type(4){position: absolute;left:290px;top:55px; font-size: 19px;color: #F9881F;display: inline-block;}

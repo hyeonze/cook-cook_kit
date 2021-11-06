@@ -11,6 +11,7 @@
 <link rel="apple-touch-startup-image" href=".png" />
 <script src="https://kit.fontawesome.com/6c4c22fc0d.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="css/home.css" />
+<script src="js/main.js"></script>
 </head>
 <body>
 <!-- header -->
@@ -26,7 +27,17 @@
     <div class="title_bar">
         <h1>Home</h1>
         <div class="left_item"><a href="javascript:history.back()"><i class="fas fa-chevron-left"></i></a></div>
-        <div class="right_item"><a href="#"><i class="fas fa-search"></i></a></div>
+        <div class="right_item btn_srch"><a href="#"><i class="fas fa-search"></i></a></div>
+        <div class="search">
+            <form action="/" method="post">
+                <fieldset>
+                    <legend class="blind">search box</legend>
+                    <label for="search" class="blind">search box</label>
+                    <input type="search" id="search" placeholder="Please enter your search term."/>
+                    <button type="button">Search</button>
+                </fieldset>
+            </form>
+        </div>
     </div>
     <!-- //title_bar -->
 </header>
@@ -37,23 +48,23 @@
 <p>Hello, Julieta!</p>
 <p>What do you want to eat?</p>
 <ul>
-    <li><a href="#">camping</a></li>
-    <li><a href="#">vegan</a></li>
-    <li><a href="#">baby</a></li>
-    <li><a href="#">fish</a></li>
-    <li><a href="#">2person</a></li>
+    <li><a href="list.html">camping</a></li>
+    <li><a href="list.html">vegan</a></li>
+    <li><a href="list.html">baby</a></li>
+    <li><a href="list.html">fish</a></li>
+    <li><a href="list.html">2person</a></li>
 </ul>
 <p>Recommended</p>
-<dl>
+<dl><a href="product.html">
     <dt>Healthy Chicken Pasta Salad with Avocado, Tomato, and Basil</dt>
     <dd><img src="images/home_dish_1.png" alt="Healthy Chicken Pasta Salad with Avocado, Tomato, and Basil"></dd>
     <dd><span>$8.7</span><span><i class="fas fa-heart"></i> 567</span><span><i class="fas fa-comment"></i> 315</span></dd>
-</dl>
-<dl>
+</a></dl>
+<dl><a href="product.html">
     <dt>Roasted Garlic Pasta with Tomatoes and Spinach</dt>
     <dd><img src="images/home_dish_2.png" alt="Healthy Chicken Pasta Salad with Avocado, Tomato, and Basil"></dd>
     <dd><span>$9.3</span><span><i class="fas fa-heart"></i> 392</span><span><i class="fas fa-comment"></i> 176</span></dd>
-</dl>
+</a></dl>
 </main>
 <!-- //main -->
 <br />
