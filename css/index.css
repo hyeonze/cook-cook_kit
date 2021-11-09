@@ -10,7 +10,17 @@ main{position: relative;height: 100%;background: #F9881F;padding:64px 0;box-sizi
 main > h1{position: absolute;left: calc(50% - 96.5px); top:250px;text-indent: -9999px;overflow: hidden;
     background: url(../images/logo.png) no-repeat 0 0;width: 193px;height: 210px;}
 main > p{position: absolute;top:572px;left:calc(50% - 91px);font-size: 20px;text-align: center;}
+main > span:first-of-type{position: absolute;top:530px;left:calc(50% - 125px); display: inline-block;width: 250px;height: 4px;background: #fff;
+    text-indent: -9999px;overflow: hidden;border-radius: 10px;box-sizing: border-box;border: 1px solid #000;}
+main > span:last-of-type{position: absolute;top:530px;left:calc(50% - 125px); display: inline-block;width: 0;height: 4px;background: #000;
+    text-indent: -9999px;overflow: hidden;border-radius: 10px;box-sizing: border-box;border: 1px solid #000;
+    animation: loading 4.5s forwards;}
 main > img{position: absolute;}
 main > img:first-of-type{right: 0;top:0;}
 main > img:nth-of-type(2){width: 74px;height: 69px;left: 32.59px;top: 187px;transform: rotate(13.91deg);}
 main > img:last-of-type{left: 0;bottom:0;}
+
+@keyframes loading {
+    0%{width: 0;}
+    100%{width: 250px;}
+}
